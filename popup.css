@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text color */
+    width: 300px; /* Fixed width for the popup */
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #01a229; /* Green color for the title */
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745; /* Green button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #acf8c8; /* Light gray background */
+    border: 1px solid #ed0808; /* Gray border */
+    transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+#result.eco-friendly {
+    background-color: #d4edda; /* Light green background for eco-friendly */
+    color: #155724; /* Dark green text */
+}
+
+#result.not-eco-friendly {
+    background-color: #f8d7da; /* Light red background for not eco-friendly */
+    color: #721c24; /* Dark red text */
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.eco-friendly {
+    color: green;
+    font-weight: bold;
+}
+
+.not-eco-friendly {
+    color: red;
+    font-weight: bold;
+}
