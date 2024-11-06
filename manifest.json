@@ -3,7 +3,7 @@
   "name": "Eco-Friendly Product Checker",
   "version": "1.0",
   "description": "Filters and highlights eco-friendly products on Amazon India.",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["storage","activeTab", "scripting"],
   "background": {
       "service_worker": "background.js"
   },
@@ -14,6 +14,11 @@
       }
   ],
   "action": {
-      "default_popup": "popup.html"
-  }
+      "default_popup": "popup.html",
+      "default_icon": "EcoLens_Circular_Logo.png"
+
+  },
+  "icons": {
+        "128": "EcoLens_Circular_Logo.png"
+    }
 }

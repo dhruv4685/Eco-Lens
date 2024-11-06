@@ -7,6 +7,15 @@
     <link rel="icon" href="/EcoLens_Circular_Logo.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;900&display=swap" rel="stylesheet">
+    <script>
+      document.getElementById("downloadBtn").addEventListener("click", function() {
+        const link = document.createElement("a");
+        link.href = "/ECOLENS.zip"; // path to your extension file
+        link.download = "ECOLENS.zip"; // the filename for the download
+        link.click();
+    });
+    
+    </script>
 </head>
 
 <body class="font-poppins bg-[#E0F7EF] min-h-screen w-full overflow-auto">
@@ -46,9 +55,10 @@
                           <option>Android</option>
                         </select>
                     </div>
-                    <button type="submit" class="w-full bg-[#218838] text-white py-2 rounded-md hover:bg-[#1a6b2b]">
+                    <button type="submit" id="downloadBtn" class="w-full bg-[#218838] text-white py-2 rounded-md hover:bg-[#1a6b2b]">
                       Download EcoLens
                   </button>
+                  
                     
                 </form>
             </aside>
